@@ -1,0 +1,67 @@
+// FUNCIONES ADICIONALES SOLICITADAS
+
+int cambiarCaracterAAscii (char ccaracter){
+    int icodAscii;
+    icodAscii = (int) ccaracter;
+    return icodAscii;
+}
+
+char cambiarAsciiACaracter (int iascii){
+    char cCaracter;
+    cCaracter = (char) iascii;
+    return cCaracter;
+}
+
+int cambiarBinarioANumero (char * cbinario){
+
+}
+
+char * cambiarNumeroABinario (int inumero){
+    char * cEnBinario = new char[50];
+    int iPos = 0;
+    while (inumero > 1)
+    {
+        cEnBinario[iPos] = (char) modf(inumero,2);
+        inumero = inumero/2;
+    }
+    return cEnBinario;
+}
+
+/*cout<<"5. Caracter a Ascii"<<endl;
+    cout<<"6. Ascii a Caracter"<<endl;
+    cout<<"7. Numero a Binario"<<endl;*/
+
+
+
+ /*case 5: {
+            char ccaracter_ingresado;
+
+            cout<<"CONVERTIR CARACTER A ASCII"<<endl;
+            cout<<"Ingrese caracter:"<<endl;
+            cin>>ccaracter_ingresado;
+            cout<<"Su codigo Asccii es:"<<endl;
+            cout<<cambiarCaracterAAscii (ccaracter_ingresado);
+            break;
+        }
+
+        case 6: {
+            int icodigo_ingresado;
+
+            cout<<"CONVERTIR COD.ASCII A CARACTER"<<endl;
+            cout<<"Ingrese codigo ascii:"<<endl;
+            cin>>icodigo_ingresado;
+            cout<<"El caracter correspondiente es:"<<endl;
+            cout<<cambiarAsciiACaracter (icodigo_ingresado);
+            break;
+        }
+
+        case 7: {
+            int inumero_ingresado;
+
+            cout<<"NUMERO A BINARIO"<<endl;
+            cout<<"Ingrese numero:"<<endl;
+            cin>>inumero_ingresado;
+            cout<<"Su correspondiente Binario es:"<<endl;
+            cout<<cambiarNumeroABinario (inumero_ingresado));
+            break;
+        }*/

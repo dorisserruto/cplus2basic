@@ -1,0 +1,17 @@
+// Colocar los procesos en cola
+			queue<T> queueToProc;
+			for (unsigned int i=0; i< group.size(); i++)
+				queueToProc.push(group[i]);
+
+//Crear tantos threads como procesadores
+			boost::thread_group procThread;
+
+while (!queueToProc.empty())
+			{
+				if ((unsigned int) procThread.size() <= (unsigned int)(nProcessors)){
+					//procThread.create_thread(queueToProc.front());
+					procThread.create_thread( Op(queueToProc.front().getWeight())() );
+					queueToProc.pop();
+					cout<<"Creada Thread:"<<(unsigned int) procThread.size()<<endl;
+				}
+			}

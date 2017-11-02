@@ -1,0 +1,11 @@
+Desde que el hombre comenzó a comunicarse con sus semejantes ha
+experimentado la necesidad de proteger su información confidencial de
+oídos y ojos indiscretos. A lo largo de la historia se han utilizado
+distintas técnicas de protección, desde la esteganografía para
+ocultar la existencia de los propios mensajes secretos, de manera que
+pasaran desapercibidos al enemigo, como por ejemplo gracias a la
+tinta invisible o a los micropuntos en letras de libros o periódicos,
+hasta la criptografía, para cifrar el contenido de los mensajes, de
+forma que sean ininteligibles para cualquiera que no posea la clave
+de descifrado, como la cifra de César, las rótulas de Tritemio, o los
+cuadrados de Polibio.
